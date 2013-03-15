@@ -19,22 +19,22 @@ var brand2 = "FK";
 
 
 //****Procedure****
-console.log("Hey, good to see you today! My name is" + mechanic + ",how may i help you out!?");
-console.log("Ok,Ok, i see that you are wanting to lower this. Lets check where the height at right now.");
+console.log("Mechanic" + ": Hey, good to see you today! My name is" + mechanic + ",how may i help you out!?");
+console.log("Mechanic" + ": Ok,Ok, i see that you are wanting to lower this. Lets check where the height at right now.");
  
  if(stockheight > 1.5){
  
-    console.log("We need to drop this a good bit" );
-    console.log("You are sitting at about " + stockheight + " " + measurement);
+    console.log("Mechanic" + ": We need to drop this a good bit" );
+    console.log("Mechanic" + ": You are sitting at about " + stockheight + " " + measurement);
     
  }
  else{
-    console.log("Haha you dont need me, your just fine. Anything else i can do for ya!?");
+    console.log(mechanic + ": Haha you dont need me, your just fine. Anything else i can do for ya!?");
     }
     
 //****Boolean Function****
 
-console.log("So lets think anout this, we have 2 brands we sale.");
+console.log("Mechanic"+ ": So lets think anout this, we have 2 brands we sale.");
 
 
 
@@ -44,7 +44,7 @@ var coilchoice = function (Brand) {
     var choice = true;
     if (choice == true ) {
     
-    console.log ("Yes! " + Brand + " Would be the perfect choice because of the drop!");
+    console.log ("Mechanic" + ": Yes! " + Brand + " Would be the perfect choice because of the drop!");
     
     return;
 
@@ -54,14 +54,14 @@ var coilchoice = function (Brand) {
 
 coilchoice ("RaceLands");
 
-console.log("Now that we have made our decision lets drop it!");
+console.log("Mechanic" + ": Now that we have made our decision lets drop it!");
 
 
 //****Number Function****
 
 var prefHeight = 1.0;
 var Racelands = 3.0;
-console.log("Now we will drop this in increments just to be safe.");
+console.log("Mechanic"+ ": Now we will drop this in increments just to be safe.");
 
 var height = function (lowerIt) {
     
@@ -69,11 +69,11 @@ var height = function (lowerIt) {
         var remaining = stock - lowerIt;
         
        if (remaining > 0.5) {
-       console.log(remaining + " Remaining!");
-       console.log("Lower!");
+       console.log("Mechanic"+ ": " + remaining + " Remaining!");
+       console.log("Mechanic"+ ": Lower!");
     }
     else{
-        console.log("We Are THERE! CONGRATS!");
+        console.log("Mechanic" + ": We Are THERE! CONGRATS!");
     }
     
 
@@ -81,5 +81,35 @@ var height = function (lowerIt) {
 }
 }
 height (0.5)
+
+//****String Function****
+console.log("Mechanic"+ ": Ok we are through! Lets go sign some paper work!");
+console.log("Mechanic"+ ": Could you tell me your name please?");
+
+
+var name = function (first, last) {
+    var fullName = first + last;
+    console.log("Client: My name is " + fullName);
+    console.log("Client : I just wanted to say thank you for your services!")
+}
+
+name ("Johnny ", "Rocket")
+
+
+
+//****Array Function****
+
+var parts = [ "Coils", "Bolts/Misc"]
+var price = [450, 20]
+
+console.log("Mechanic: Hey, its not problem! So how would you like to pay for this today?");
+console.log("Client: Could i get the price on the parts please?");
+console.log("Mechanic: Oh yes, for sure thats my fault, it will be....." )
+console.log("Mechanic: " + "$" + price[0] + " for the " + parts[0] + " and " + "$" + price[1] + " for the " + parts[1] + "." );
+
+
+
+//var cost = function ()
+
 
 
