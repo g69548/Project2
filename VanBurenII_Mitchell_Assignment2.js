@@ -100,16 +100,30 @@ name ("Johnny ", "Rocket")
 //****Array Function****
 
 var parts = [ "Coils", "Bolts/Misc"]
-var price = [450, 20]
+var price = [450, 50]
 
 console.log("Mechanic: Hey, its not problem! So how would you like to pay for this today?");
 console.log("Client: Could i get the price on the parts please?");
 console.log("Mechanic: Oh yes, for sure thats my fault, it will be....." )
 console.log("Mechanic: " + "$" + price[0] + " for the " + parts[0] + " and " + "$" + price[1] + " for the " + parts[1] + "." );
+console.log(" Just cashed my check! Ill pay cash!");
 
 
+var cost = function (total)  {
 
-//var cost = function ()
+var allPayment = total
 
 
+    
+    for (i = 0; i< total; i +=50 ){
+        console.log(total - i + " Remaining!");
+        }
 
+    console.log("Mechanic: Thank you for your bussiness! Come Back again sometime!");
+    console.log("Mechanic: WOOOWOOOOWOO easy throwing those heavy bills, thats all i need!")
+    console.log("Client: Your welcome! Thank you for the great hospitality and.....");
+    
+}
+cost(500);
+
+console.log("Making My Ride Stezzy!"); //This is going to be a code signature for me :)
