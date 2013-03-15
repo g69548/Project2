@@ -106,7 +106,7 @@ console.log("Mechanic: Hey, its not problem! So how would you like to pay for th
 console.log("Client: Could i get the price on the parts please?");
 console.log("Mechanic: Oh yes, for sure thats my fault, it will be....." )
 console.log("Mechanic: " + "$" + price[0] + " for the " + parts[0] + " and " + "$" + price[1] + " for the " + parts[1] + "." );
-console.log(" Just cashed my check! Ill pay cash!");
+console.log("Client: Just cashed my check! Ill pay cash!");
 
 
 var cost = function (total)  {

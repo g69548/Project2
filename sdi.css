@@ -1,14 +1,14 @@
 html {
-    background-color: #E1DFD3;
+    background-color: #E1eFD3;
 }
 body {
     font-family: "Lucida Grande", "Arial", sans-serif;
     margin: 1.5em auto;
     padding: 1.5em;
     background-color: white;
-    color: #4D4B39;
+    color: #4D8B39;
     max-width: 35em;
-    border: 0.75em solid #A6A59C;
+    border: 0.75em solid #A6A59D;
     line-height: 1.5em;
 }
 p {
@@ -22,7 +22,7 @@ h1 {
     margin: -0.75em -0.75em 0.75em -0.75em;
 }
 h2 {
-    background-color: #4D4B39;
+    background-color: #4D0B39;
     color: #88a75d;
     font-size: 150%;
     padding: 1em;
